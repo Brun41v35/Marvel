@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		288088AFCAA5D4790613B6B0 /* Pods_Marvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D739C74412B0FFE8977783C /* Pods_Marvel.framework */; };
 		45688CC99488DDAE6727D5E9 /* Pods_Marvel_MarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76831B8736C9622E7EE1EEB /* Pods_Marvel_MarvelUITests.framework */; };
+		7ED14F2625923E9D009AA4C5 /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED14F2525923E9D009AA4C5 /* MarvelAPI.swift */; };
+		7ED14F2B25923EC9009AA4C5 /* MarvelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED14F2A25923EC9009AA4C5 /* MarvelClass.swift */; };
 		7EDDC01B25922B6700699FE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDC01A25922B6700699FE2 /* AppDelegate.swift */; };
 		7EDDC01D25922B6700699FE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDC01C25922B6700699FE2 /* SceneDelegate.swift */; };
 		7EDDC02225922B6700699FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDDC02025922B6700699FE2 /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		52F38020DF4A66FB7E16FF44 /* Pods-MarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelTests.release.xcconfig"; path = "Target Support Files/Pods-MarvelTests/Pods-MarvelTests.release.xcconfig"; sourceTree = "<group>"; };
 		6085748C95CEE5D526767C6F /* Pods-Marvel-MarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-MarvelUITests.release.xcconfig"; path = "Target Support Files/Pods-Marvel-MarvelUITests/Pods-Marvel-MarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7371C623654457EFE919B057 /* Pods-MarvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelTests.debug.xcconfig"; path = "Target Support Files/Pods-MarvelTests/Pods-MarvelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7ED14F2525923E9D009AA4C5 /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
+		7ED14F2A25923EC9009AA4C5 /* MarvelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelClass.swift; sourceTree = "<group>"; };
 		7EDDC01725922B6700699FE2 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDDC01A25922B6700699FE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDDC01C25922B6700699FE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +105,6 @@
 				7371C623654457EFE919B057 /* Pods-MarvelTests.debug.xcconfig */,
 				52F38020DF4A66FB7E16FF44 /* Pods-MarvelTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,6 +164,7 @@
 		7EDDC053259234A300699FE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7ED14F2A25923EC9009AA4C5 /* MarvelClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +191,7 @@
 		7EDDC0592592353A00699FE2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				7ED14F2525923E9D009AA4C5 /* MarvelAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -441,7 +446,9 @@
 			files = (
 				7EDDC01B25922B6700699FE2 /* AppDelegate.swift in Sources */,
 				7EDDC01D25922B6700699FE2 /* SceneDelegate.swift in Sources */,
+				7ED14F2B25923EC9009AA4C5 /* MarvelClass.swift in Sources */,
 				7EDDC05E259237EE00699FE2 /* HeroesTableViewController.swift in Sources */,
+				7ED14F2625923E9D009AA4C5 /* MarvelAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
